@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://www.geeksforgeeks.org/python-projects-beginner-to-advanced/"
+url = "<the link goes here>"
 
 r = requests.get(url)
 htmlContent = r.content
