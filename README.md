@@ -22,13 +22,13 @@ python web_scraper.py <URL> [output_file.json]
 
 ```bash
 # Basic usage - saves to auto-generated filename
-python web_scraper.py https://docs.capillarytech.com/reference/apioverview
+python web_scraper.py <link-to-scrape>
 
 # Save to custom filename
-python web_scraper.py https://docs.capillarytech.com/reference/apioverview my_data.json
+python web_scraper.py <link-to-scrape>
 
 # Example with another site
-python web_scraper.py https://example.com scraped_data.json
+python web_scraper.py <link-to-scrape> scraped_data.json
 ```
 
 ## Features
@@ -105,7 +105,7 @@ You can also use the script as a module in your own Python code:
 from web_scraper import WebScraper
 
 # Create scraper instance
-scraper = WebScraper("https://docs.capillarytech.com/reference/apioverview")
+scraper = WebScraper("link-to-scrape")
 
 # Scrape all data
 data = scraper.scrape_all()
